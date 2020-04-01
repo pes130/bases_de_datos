@@ -61,6 +61,21 @@ CREATE TABLE instituto (
     nombre VARCHAR(150) NOT NULL,
     direccion VARCHAR(200) NOT NULL
 );
+
+CREATE TABLE tasa (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    importe decimal(10, 2),
+    fecha_pago DATE,
+    id_matricula INT UNSIGNED,
+    FOREIGN KEY (id_matricula) REFERENCES matricula (id)
+);
+
+CREATE TABLE registros_contables (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    tipo ENUM ('reintegro', 'ingreso') NOT NULL,
+    importe DECIMAL(10,2),
+    fecha date
+);
 	
 -- Inserciones de alumnos
 INSERT INTO alumno VALUES(1, 'María', 'Sánchez', 'Pérez', '1990/12/01', 'no', NULL);
