@@ -18,7 +18,7 @@ CREATE TABLE producto (
 );
 
 CREATE TABLE pedido (
-	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	id INT UNSIGNED PRIMARY KEY,
     fecha DATETIME,
     cliente_id INT UNSIGNED,
     FOREIGN KEY (cliente_id) REFERENCES cliente(id)
