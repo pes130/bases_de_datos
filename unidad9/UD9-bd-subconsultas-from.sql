@@ -75,10 +75,12 @@ INSERT INTO alumno VALUES(10, 'Daniel', 'Moreno', 'Ruiz', '1998/02/03', 'no', NU
 INSERT INTO ciclo VALUES (1, 'Sistemas microinformáticos y redes', 'SMR');
 INSERT INTO ciclo VALUES (2, 'Administración de Sistemas Informáticos y Redes', 'ASIR');
 INSERT INTO ciclo VALUES (3, 'Desarrollo de Aplicaciones Multiplataforma', 'DAM');
+INSERT INTO ciclo VALUES (4, 'Desarrollo de Aplicaciones Web', 'DAW');
 
-INSERT INTO modulo VALUES(1, 'GBD', 'Gestión de Bases de Datos', 128, '1', 1);
-INSERT INTO modulo VALUES(2, 'LMSGI', 'Lenguajes de marcas y sistemas de gestión de información', 128, '1', 1);
-INSERT INTO modulo VALUES(3, 'PAR', 'Planificación y administración de redes', 128, '1', 1);
+INSERT INTO modulo VALUES(1, 'BD', 'Bases de Datos', 128, '1', 4);
+INSERT INTO modulo VALUES(2, 'LMSGI', 'Lenguajes de marcas y sistemas de gestión de información', 128, '1', 4);
+INSERT INTO modulo VALUES(3, 'ED', 'Entornos de Desarrollo', 128, '1', 4);
+INSERT INTO modulo VALUES(4, 'PRO', 'Programación', 128, '1', 4);
 
 INSERT INTO curso_academico VALUES (1, 2017, 2018);
 INSERT INTO curso_academico VALUES (2, 2018, 2019);
@@ -102,7 +104,10 @@ INSERT INTO matricula VALUES
     (15, 5, 3, 2),
     (16, 6, 1, 2),
     (17, 6, 2, 2),
-    (18, 6, 3, 2);
+    (18, 6, 3, 2),
+    (19, 1, 4, 3),
+    (20, 2, 4, 3),
+    (21, 3, 4, 3);
 
 
 SET FOREIGN_KEY_CHECKS = 1;
