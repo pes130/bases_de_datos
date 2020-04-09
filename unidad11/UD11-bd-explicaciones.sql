@@ -59,7 +59,7 @@ CREATE TABLE matricula (
 CREATE TABLE instituto (
 	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
-    direccion VARCHAR(200) NOT NULL
+    direccion VARCHAR(200)
 );
 
 CREATE TABLE tasa (
